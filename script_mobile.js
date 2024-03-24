@@ -104,6 +104,7 @@ function checkWindow(){
         const link = document.createElement('a');
         link.href = './index.html';
         link.click();
+        link.remove();
         drawField();
     }else{
         drawField();
