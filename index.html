@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo__container">
+            <span class="iconify" id="header__icon" data-icon="pixelarticons:pixelarticons"></span>
+            <a href="index.html" class="header__logo">PatternPixelStudio</a>
+        </div>
+        <div class="header__nav">
+            <a href="#"><span class="iconify" id="header__icon" data-icon="fluent-mdl2:website"></span></a>
+            <a href="https://t.me/teeeetanik"><span class="iconify" id="header__icon" data-icon="mingcute:telegram-fill"></span></a>
+            <a href="https://github.com/maksssssssim"><span class="iconify" id="header__icon" data-icon="bi:github"></span></a>
+        </div>
+    </header>
+    <div class="main__container">
+        <div class="drawing__container__desktop">
+            <div class="side__drawing__zone">
+                <div class="slider__container">
+                    <p class="slider__title">Пошире</p>
+                    <input type="range" id="xRange" min="0" max="300" value="40" oninput="takeVal('xVal')">
+                </div>
+                <div class="slider__container">
+                    <p class="slider__title">Повыше</p>
+                    <input type="range" id="yRange" min="0" max="300" value="40" oninput="takeVal('yVal')">
+                </div>
+                <div class="slider__container">
+                    <p class="slider__title">Поменьше</p>
+                    <input type="range" id="rndRange" min="0" max="100" value="40" oninput="takeVal('rndVal')">
+                </div>
+            </div>
+            <div class="drawing__field">
+                <canvas id="canvas"></canvas>
+            </div>
+            <div class="side__drawing__zone">
+                <div class="slider__container">
+                    <p class="slider__title">Покраснее</p>
+                    <input type="range" id="rRange" min="0" max="255" value="100" oninput="takeVal('rColor')">
+                </div>
+                <div class="slider__container">
+                    <p class="slider__title">Позеленее</p>
+                    <input type="range" id="gRange" min="0" max="255" value="100" oninput="takeVal('gColor')">
+                </div>
+                <div class="slider__container">
+                    <p class="slider__title">Посинее</p>
+                    <input type="range" id="bRange" min="0" max="255" value="100" oninput="takeVal('bColor')">
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons__container">
+            <button class="random__btn" onclick="randomValues()">
+                <span class="iconify" id="random__icon" data-icon="ion:dice-outline"></span>
+            </button>
+            <button class="save__btn" onclick="saveImage()">Сохранить</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

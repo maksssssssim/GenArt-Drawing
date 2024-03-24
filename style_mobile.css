@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.header {
+    width: calc(100vw - 40px);
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.header__logo__container {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.main__container {
+    width: calc(100vw - 40px);
+    margin: 20px;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.drawing__container__desktop {
+    width: calc(100vw - 20px);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.side_drawing {
+    width: calc(100vw - 60px);
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.side__drawing__zone {
+    width: calc(100%/2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.slider__container {
+    padding: 5px 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+input[type='range'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: 0;
+    height: 6px;
+    border-radius: 40px;
+    background: black;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+input[type='range']::-moz-range-thumb {
+    -moz-appearance: none;
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+canvas {
+    border-radius: 30px;
+}
+
+.buttons__container {
+    padding: 20px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    border: 2px solid black;
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.save__btn {
+    background-color: black;
+    color: white;
+}
+
+#random__icon {
+    width: 30px;
+    height: 30px;
+}
