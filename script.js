@@ -104,6 +104,7 @@ function checkWindow(){
         const link = document.createElement('a');
         link.href = './index_mobile.html';
         link.click();
+        link.remove();
         drawField();
     }else{
         drawField();
